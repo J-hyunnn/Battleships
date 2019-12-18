@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Battle Ships</h1>
+
+    
+
+
+    <fieldset>
+            
+
+        <p id="ange"> Ange koordinater här!</p>
+
+        <select id="chooseShip">
+            <option value="selectboat" id="idSelect">Vilken typ av skepp vill you ha?</option>
+            <option value="destroyerOpt" id="idDestroyer" >Destroyer (size:2*1)</option>
+            <option value="submarineOpt" >Submarine (size:3*1)</option>
+            <option value="cruiserOpt">Cruiser (size:4*1)</option>
+            <option value="battleshipOpt">Battle ship (size:5*1)</option>
+        </select>
+
+        
+        <input id="x-coord1" placeholder="Y1"/>
+        <input id="y-coord1" placeholder="X1"/>
+        <input id="x-coord2" placeholder="Y2"/>
+        <input id="y-coord2" placeholder="X2"/>
+        <button id="button" onclick="someFunction()">Go</button>
+       
+    
+      </fieldset>
+
+      <marquee behavior="alternate"><h1 id="vilkenAI"></h1></marquee>
+
+      </marquee><div id="board">
+
+      <div class="playercontainerColumn"></div>
+        <!-- 
+        <div class="containerRow0"></div>
+        <div class="containerRow1"></div>
+        <div class="containerRow2"></div>
+         -->
+      <div class="aicontainerColumn"></div>
+      </div>
+
+    <h1 id="status">Skjut på en ruta genom att klicka på den.</h1>
+
+    
+    <script src="js/playerHardAi.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculateMaxScore.js"></script>
+    <script src="js/calculatePlayerScore.js"></script>
+    
+
+    
+</body>
+</html>
