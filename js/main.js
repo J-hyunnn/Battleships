@@ -1,3 +1,5 @@
+//hej
+
 
 //Så här stora ska rutorna vara på spelplanen
 let squareSize = 55;
